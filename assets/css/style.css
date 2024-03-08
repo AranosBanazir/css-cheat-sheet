@@ -1,13 +1,13 @@
 :root{
     --primary-color: hotpink;
-    --secondary-color: rgb(24, 5, 153);
+    --secondary-color: rgb(59, 59, 59);
     --light: #efefef
 }
 
 body{
     background-color: var(--secondary-color);
     color: var(--light);
-
+    font-size: 16px;
 }
 
 h1{
@@ -43,6 +43,7 @@ p{
 .row{
     display: flex; 
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .justify-center{
@@ -50,9 +51,46 @@ p{
 }
 
 .card-column{
-    width: 33%
+    width: 33%;
+    margin-bottom: 55px;
+
 }
 
+.card{
+    background-color: transparent;
+    border: 1.5px dashed var(--light);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card h2, .card p{
+    color: var(--primary-color);
+}
+
+
+.card p{
+    margin-bottom: 15px;
+}
+
+.card-header{
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    padding: 4px;
+    background-color: var(--secondary-color);
+    border: 2px solid var(var(--light))
+}
+
+.code-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    flex:1;
+    background: linear-gradient(45deg, var(--primary-color) 0%, #883860 100%);
+}
 
 /* Media queires */
 
