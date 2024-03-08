@@ -1,0 +1,68 @@
+:root{
+    --primary-color: hotpink;
+    --secondary-color: rgb(24, 5, 153);
+    --light: #efefef
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--light);
+
+}
+
+h1{
+   font-size: 250%;
+}
+
+h2{
+font-size: 200%;
+}
+
+h3{
+font-size: 175%;
+}
+
+
+
+header{
+    text-align: center;
+    margin: 40px 0px;
+    padding-left:40px;
+    padding-right:40px;
+
+}
+.page-title{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 130%;
+}
+
+.row{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.card-column{
+    width: 33%
+}
+
+
+/* Media queires */
+
+@media (max-width: 840px) {
+    .card-column{
+        width:50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+
+}
